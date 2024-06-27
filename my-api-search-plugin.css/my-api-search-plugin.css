@@ -1,0 +1,15 @@
+#my-api-search-plugin {
+    margin: 20px 0;
+}
+#my-api-search-input {
+    padding: 10px;
+    width: 300px;
+}
+#my-api-search-button {
+    padding: 10px 20px;
+}
+#my-api-search-results .result-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
