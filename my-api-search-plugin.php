@@ -33,8 +33,9 @@ add_shortcode('my_api_search', 'my_api_search_plugin_shortcode');
 // Handle AJAX request
 function my_api_search_plugin_ajax_handler() {
 
-    $search_query = sanitize_text_field($_POST['search_query']);
-    $api_url = '38.242.138.225:8069/register?form_number=' . urlencode($search_query);
+   // $search_query = sanitize_text_field($_POST['search_query']);
+    $search_query = sanitize_text_field($_Get['search_query']);
+    $api_url = '38.242.138.225:8069/register?form_number=' . $search_query;
     $response = wp_remote_get($api_url);
 
     if (is_wp_error($response)) {

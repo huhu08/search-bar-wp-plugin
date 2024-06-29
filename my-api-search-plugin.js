@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
 
         $.ajax({
             url: myApiSearchPlugin.ajax_url,
-            type: 'POST',
+            type: 'GET',
             data: {
                 action: 'my_api_search',
                 search_query: searchQuery
